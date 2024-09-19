@@ -9,7 +9,6 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="horror-text">CEK KHODAM KAMU</h1>
         <% if(locals.name) {%>
             <h2 class="horror-text">Khodam <span><%= name %></span> adalah...</h2>
                 <img src=<%= khodamUrl %> alt="khodam image">
@@ -17,6 +16,7 @@
                 <input class="btn" type="submit" value="coba nama lain">
             </form>
         <% } else { %>
+            <h1 class="horror-text">CEK KHODAM KAMU</h1>
             <form action="/" method="post">
                 <input class="inputText" type="text" name="name" id="" placeholder="masukkan nama">
                 <input class="btn" type="submit" value="cek">
