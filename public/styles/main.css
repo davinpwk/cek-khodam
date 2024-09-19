@@ -85,3 +85,7 @@ img{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+
+p{
+    color: grey;
+}
