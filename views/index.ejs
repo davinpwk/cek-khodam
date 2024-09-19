@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Khodam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="horror-text">CEK KHODAM KAMU</h1>
+        <% if(locals.name) {%>
+            <h2 class="horror-text">Khodam <span><%= name %></span> adalah...</h2>
+                <img src=<%= khodamUrl %> alt="khodam image">
+            <form action="/" method="get">
+                <input class="btn" type="submit" value="coba nama lain">
+            </form>
+        <% } else { %>
+            <form action="/" method="post">
+                <input class="inputText" type="text" name="name" id="" placeholder="masukkan nama">
+                <input class="btn" type="submit" value="cek">
+            </form>
+        <% } %>
+    </div>
+</body>
+</html>
